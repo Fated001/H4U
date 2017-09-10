@@ -29,9 +29,11 @@
       <file leaf-file-name="Project.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/th/ac/mwits/www/ambientdetector/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8329114">
-              <caret line="1532" column="21" selection-start-line="1532" selection-start-column="21" selection-end-line="1532" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.3329114">
+              <caret line="1105" column="40" selection-start-line="1105" selection-start-column="40" selection-end-line="1105" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2166,9 +2168,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/th/ac/mwits/www/ambientdetector/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8329114">
-          <caret line="1532" column="21" selection-start-line="1532" selection-start-column="21" selection-end-line="1532" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="0.3329114">
+          <caret line="1105" column="40" selection-start-line="1105" selection-start-column="40" selection-end-line="1105" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

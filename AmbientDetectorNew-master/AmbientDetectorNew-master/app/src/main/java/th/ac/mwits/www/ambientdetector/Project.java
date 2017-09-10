@@ -20,6 +20,7 @@ import android.media.AudioTrack;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
+import android.media.audiofx.AutomaticGainControl;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -923,6 +924,8 @@ public class Project extends AppCompatActivity {
             //อันนี้จะทำวนไปเป็น background process
             //อัดเสียง
             recorder.startRecording();
+            AutomaticGainControl agc=AutomaticGainControl.create(recorder.getAudioSessionId());
+            agc.setEnabled(true);
             while (true) {
                 Log.d("TAG", "" + count);
 
@@ -1111,6 +1114,7 @@ public class Project extends AppCompatActivity {
                 count++;
             }
             recorder.stop();
+            agc.setEnabled(false);
             return null;
         }
 
