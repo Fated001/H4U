@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="ช่วยเหลือ(หน้าจอ)" >
+        <PreferenceScreen
+            android:title="หน้าจอหลัก">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="main_screen" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="การตั้งค่า">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="settings" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="เสียงที่บันทึกไว้">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="recorded_sounds" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="ประวัติการแจ้งเตือน">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="log_screen" />
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ช่วยเหลือการใช้งาน" >
+        <PreferenceScreen
+            android:title="การเปลี่ยนโหมด">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="mode" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="ตั้งค่า Threshold">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="threshold" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="เริ่ม-หยุดการตรวจจับเสียง">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="detect" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="การเพิ่มเสียงที่ต้องการบันทึก">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="record" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="หยุดการแจ้งเตือน">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="noti_off" />
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

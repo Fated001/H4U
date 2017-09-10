@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="ตั้งค่าการแจ้งเตือน" >
+        <CheckBoxPreference
+            android:title="การสั่น"
+            android:summary="แจ้งเตือนด้วยการสั่น"
+            android:key="vibrate_noti"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="แสง LED"
+            android:summary="แจ้งเตือนด้วยแสง LED"
+            android:key="LED_noti"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="ข้อความ"
+            android:summary="แจ้งเตือนด้วยข้อตวามทางหน้าจอ"
+            android:key="Push_noti"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Recognizing Mode" >
+        <PreferenceScreen
+            android:title="จัดการเสียงที่บันทึกไว้"
+            android:summary="ดูหรือลบไฟล์เสียงที่บันทึกไว้">
+            <intent android:action="th.ac.mwits.www.ambientdetector.show_recordedsounds"/>
+        </PreferenceScreen>
+        <EditTextPreference
+            android:title="ตั้งค่าความอ่อนไหวของไมโครโฟน (0 - 100)"
+            android:summary="0=อ่อนไหวมาก 100=อ่อนไหวน้อย"
+            android:key="Tolerance"
+            android:defaultValue="15"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ตั้งค่าประวัติการแจ้งเตือน" >
+        <PreferenceScreen
+            android:title="ดูประวัติการแจ้งเตือน"
+            android:summary="ดูประวัติการแจ้งเตือนเสียงที่เกิดขึ้น">
+            <intent android:action="th.ac.mwits.www.ambientdetector.show_log"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="ลบประวัติการแจ้งเตือน"
+            android:summary="ลบประวัติการแจ้งเตือนเสียงที่เกิดขึ้น">
+            <intent android:action="th.ac.mwits.www.ambientdetector.clrLog"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="อื่นๆ" >
+        <PreferenceScreen
+            android:title="ช่วยเหลือ">
+            <intent android:action="th.ac.mwits.www.ambientdetector.app_help"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="เกี่ยวกับแอปพลิเคชัน">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="about" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Disclaimer">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="disclaimer" />
+            </intent>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="ข้อตกลงการใช้งาน">
+            <intent
+                android:action="th.ac.mwits.www.ambientdetector.about_screen">
+                <extra android:name="src" android:value="disclaimer_thai" />
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

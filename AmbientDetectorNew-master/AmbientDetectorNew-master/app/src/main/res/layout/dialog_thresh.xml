@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90 dB: รถบรรทุกที่อยู่ห่างออกไป 10 เมตร"
+        android:id="@+id/textView19"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80 dB: ถนนที่มีความวุ่นวายที่ห่างออกไป 5 เมตร"
+        android:id="@+id/textView20"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70 dB: เครื่องดูดฝุ่นที่ห่างออกไป 1 เมตร"
+        android:id="@+id/textView21"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 dB: การสนทนาที่ห่างออกไป 1 เมตร"
+        android:id="@+id/textView22"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 dB: เสียงปกติในบ้าน"
+        android:id="@+id/textView23"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 dB: ห้องสมุดที่เงียบ"
+        android:id="@+id/textView24"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 dB: ห้องนอนเงียบยามกลางคืน"
+        android:id="@+id/textView25"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ความดัง ณ ขณะนี้?"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#E48022"
+    tools:context="th.ac.mwits.www.ambientdetector.MainActivity">
+
+    <!-- <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/> -->
+
+
+
+    <ImageButton
+        android:id="@+id/TTS_STT"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:background="@drawable/button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tts_stt"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TTS_STT"
+        android:background="@drawable/button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_record_new"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/button3_1"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TTS_STT"
+        android:background="#e5e3e0"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_record_new_1"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/off"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TTS_STT"
+        android:background="@drawable/button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/notifi_off"
+        android:text="Notifications Off"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_start_new"
+        android:scaleType="fitCenter"
+        android:textColor="#22dd22"
+        android:background="@drawable/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher_stop_new"
+        android:textColor="#dd2222" />
+
+    <ImageButton
+        android:id="@+id/button2_1"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher_stop_new_1"
+        android:textColor="#dd2222"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/off"
+        android:layout_toEndOf="@+id/off"
+        android:layout_below="@+id/TTS_STT">
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ตั้ง Threshold"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+
+            android:layout_alignLeft="@+id/switch1"
+            android:layout_alignStart="@+id/switch1" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lite Mode"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+    </RelativeLayout>
+
+    <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/record"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" /> -->
+</RelativeLayout>
